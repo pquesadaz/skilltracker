@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'styles/master.css' %}">
+  </head>
+  <body>
+    Hello this is a simple test!
+    {{ variable }}
+
+<table>
+  <th>
+    Skill Name
+  </th>
+{% for skill in skills %}
+  <tr>
+    <td>
+      {{ skill.skill_name }}
+    </td>
+  </tr>
+{% endfor %}
+</table>
+
+    {{ skills }}
+
+    <img src="{% static 'images/turtle2.jpg' %}" alt="This should be the turtle image">
+  </body>
+</html>
